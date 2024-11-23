@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="sl-SI">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maturanc 2025</title>
+    <link rel="shortcut icon" type="x-icon" href="img/beach.png">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <h1>Prijava na maturanski izlet 2025</h1>
+        </div>
+        <div id="content">
+            <form method="post" id="form">
+                <div class="container">
+                    <div class="container-third">
+
+                        <input type="text" id="sola" name="sola" required maxlength="22"/>
+                        <div class="labeltext">Šola</div>
+
+
+                    </div>
+                    <div class="container-third">
+
+                        <input type="text" id="razred" name="razred" required maxlength="22"/>
+                        <div class="labeltext">Razred</div>
+
+
+                    </div>
+                </div>
+
+                <div class="container tri">
+                    <div class="container-third">
+
+                        <input type="text" id="ime" name="ime" required maxlength="22"/>
+                        <div class="labeltext">Ime</div>
+
+
+
+                    </div>
+                    <div class="container-third">
+
+                        <input type="text" id="priimek" name="priimek" required maxlength="22"/>
+                        <div class="labeltext">Priimek</div>
+
+
+                    </div>
+                    <div class="container-third tretji">
+
+                        <select id="spol" name="spol" required>
+                            <option value=""></option>
+                            <option value="M">Moški</option>
+                            <option value="Z">Ženski</option>
+                        </select>
+                        <div class="labeltext">Spol</div>
+
+
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="container-third">
+
+                        <input type="text" id="datumr" name="datumr" required onfocus="this.type='date'"
+                            onblur="this.type='text'" />
+                        <div class="labeltext">Datum rojstva</div>
+
+
+                    </div>
+                    <div class="container-third">
+
+                        <input type="text" id="krajr" name="krajr" required maxlength="22"/>
+                        <div class="labeltext">Kraj rojstva</div>
+
+
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="container-third">
+
+                        <input type="text" id="naslov" name="naslov" required maxlength="22"/>
+                        <div class="labeltext">Naslov</div>
+
+
+                    </div>
+                    <div class="container-third">
+
+                        <input type="text" id="posta" name="posta" required maxlength="22"/>
+                        <div class="labeltext">Pošta</div>
+
+
+                    </div>
+                </div>
+
+                <div class="container ena">
+                    <div class="container-third">
+
+                        <select id="termin" name="termin" required>
+                            <option value=""></option>
+                            <option value="1">Grčija, 3.7-12.7</option>
+                            <option value="2">Grčija, 6.7-12.7</option>
+                            <option value="3">Grčija, 19.7-25.7</option>
+                            <option value="4">Španija, 6.7-12.7</option>
+                            <option value="5">Španija, 19.7-25.7</option>
+                            <option value="6">Španija, 1.8-7.8</option>
+                        </select>
+                        <div class="labeltext">Termin</div>
+
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="container-third">
+
+                        <input type="tel" id="telefon" name="telefon" required />
+                        <div class="labeltext">Telefon</div>
+                        <label for="telefon">Vzorec: 000-000-000</label>
+
+                    </div>
+                    <div class="container-third">
+
+                        <input type="text" id="e_posta" name="e_posta" required maxlength="22" />
+                        <div class="labeltext">E-pošta</div>
+
+
+                    </div>
+                </div>
+
+                <div class="container tri">
+                    <div class="container-third">
+
+                        <select id="osebni" name="osebni" required>
+                            <option value=""></option>
+                            <option value="1">Osebna izkaznica</option>
+                            <option value="2">Potni list</option>
+                        </select>
+                        <div class="labeltext">Tip os. dok.</div>
+
+
+                    </div>
+                    <div class="container-third">
+
+                        <input type="text" id="stOsebne" name="stOsebne" required maxlength="22"/>
+                        <div class="labeltext">Št. os. dok.</div>
+
+                    </div>
+                    <div class="container-third tretji">
+
+                        <input type="text" id="veljavnost" name="veljavnost" required onfocus="this.type='date'"
+                            onblur="this.type='text'" />
+                        <div class="labeltext">Veljavnost os. dok.</div>
+
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="container-third">
+
+                        <input type="tel" id="telefons" name="telefons" required />
+                        <div class="labeltext">Tel. starša</div>
+                        <label for="telefons">Vzorec: 000-000-000</label>
+
+                    </div>
+                    <div class="container-third">
+
+                        <input type="text" id="e_postas" name="e_postas" required maxlength="22" />
+                        <div class="labeltext">E-pošta starša</div>
+
+
+                    </div>
+                </div>
+                <div class="container potrdi">
+                    <button type="button" id="potrdi" onclick="validateForm()">Prijava</button>
+                    
+
+                </div>
+
+
+
+
+            </form>
+        </div>
+
+    </div>
+   
+
+
+    
+    <script src="js/tel.js" defer></script>
+    <script src="js/alerti.js"></script>
+
+
+</body>
+
+</html>
